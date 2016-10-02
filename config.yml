@@ -20,18 +20,18 @@ InProgress: '&cYou can not start another xpboost as there is already one in prog
 Clear: '&cThe global XP boost has been cleared'
 
 # The error that is displayed when trying to clear an XP boost but there aren't any active boosts
-Error Clearing: '&cThere is no current XP Boost to clear.'
+Error Clearing: '&cThere is no XP Boost to clear.'
 
 # The list displayed when using /checkboost
 # Placeholders:
 # {active} : If there is an active boost or not. Will be replaced with the value from "Booleans"
 # {multiplier} : The xp multiplier
-# {countdown} : The time left until the boost ends. Uses the time format from "Time Formats"
+# {time} : The time left until the boost ends. Uses the time format from "Time Formats"
 CheckBoost:
-- '&7Multiplier: &aX{multiplier}'
-- '&7Time Left: &a{countdown}'
+- '&7Multiplier: &ax{multiplier}'
+- '&7Time Left: &a{time}'
 
-No Active Boost: '&cThere are not xp boosts at the moment'
+No Active Boost: '&cThere are no xp boosts at the moment'
 
 # The format of time strings.
 # The line displayed is the line that fits exactly to the situation

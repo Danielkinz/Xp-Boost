@@ -18,7 +18,7 @@ public class CheckBoostCommand implements CommandExecutor {
 
 		// If the multiplier expired
 		if (System.currentTimeMillis() > XpBoost.getExpire()) {
-			sender.sendMessage(Lang.getBoostInactive());
+			sender.sendMessage(Tools.format(Lang.getBoostInactive()));
 		} else {
 			// Inserts the multiplier
 			msg.replace("{multiplier}", String.valueOf(XpBoost.getMultiplier()));
@@ -41,6 +41,8 @@ public class CheckBoostCommand implements CommandExecutor {
 			msg.replace("{hours}", String.valueOf(left.getHours()));
 			msg.replace("{minutes}", String.valueOf(left.getMinutes()));
 			msg.replace("{seconds}", String.valueOf(left.getSeconds()));
+
+			Tools.sendMessages(sender, Tools.formatList(msg));
 		}
 
 		return false;

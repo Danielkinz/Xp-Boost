@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
+import org.bukkit.command.CommandSender;
 
 /**
  * A class with usefull functions
@@ -126,7 +126,7 @@ public final class Tools {
 	 * @param player
 	 * @param messages
 	 */
-	public static void sendMessages(Player player, List<String> messages) {
+	public static void sendMessages(CommandSender player, List<String> messages) {
 		for (String msg : messages) {
 			player.sendMessage(Tools.format(msg));
 		}
