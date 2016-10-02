@@ -1,0 +1,48 @@
+Current Boost:
+    Multiplier: 1
+    Expire: 0
+
+Missing Permissions: '&cInsufficient Permissions'
+    
+# Syntax error for /xpboost
+XpBoostSyntax: '&cSyntax: /xpboost {muliplier} {time}| /xpboost clear'
+
+# The message that is broadcasted when a multiplier starts
+Start: '&aA {multiplier} XP Multiplier has begun. Ends in: {time}'
+
+# The message that is broadcasted when a multiplier ends
+End: '&cGlobal XPBoost Has Ended.'
+
+# The error that is displayed when someone tries to start a boost while one is already active
+InProgress: '&cYou can not start another xpboost as there is already one in progress.'
+
+# The message that is displayed when someone clears the boost
+Clear: '&cThe global XP boost has been cleared'
+
+# The error that is displayed when trying to clear an XP boost but there aren't any active boosts
+Error Clearing: '&cThere is no current XP Boost to clear.'
+
+# The list displayed when using /checkboost
+# Placeholders:
+# {active} : If there is an active boost or not. Will be replaced with the value from "Booleans"
+# {multiplier} : The xp multiplier
+# {countdown} : The time left until the boost ends. Uses the time format from "Time Formats"
+CheckBoost:
+- '&7Multiplier: &aX{multiplier}'
+- '&7Time Left: &a{countdown}'
+
+No Active Boost: '&cThere are not xp boosts at the moment'
+
+# The format of time strings.
+# The line displayed is the line that fits exactly to the situation
+# First line: days, hours, minutes and seconds
+# Seconds line: hours, minutes and seconds
+# Third line: minutes and seconds
+# Fourth line: seconds
+# Fifth line: No time left 
+Time Formats:
+- '{days} days, {hours} hours, {minutes} minutes and {seconds} seconds'
+- '{hours} hours, {minutes} minutes and {seconds} seconds'
+- '{minutes} minutes and {seconds} seconds'
+- '{seconds} seconds'
+- 'None'

@@ -1,0 +1,14 @@
+main: me.danielkinz.xpboost.XpBoost
+name: XpBoost
+version: 1.0.0
+author: Danielkinz
+
+commands:
+    checkboost:
+        description: Checks if there is an active xpboost
+    xpboost:
+        description: Sets or removes an xpboost
+        
+permissions:
+    xpboost.admin:
+        description: Allows the player to change a boost multiplier
